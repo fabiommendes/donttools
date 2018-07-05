@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Don't Kanban</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/unpoly.css">
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/unpoly.js"></script>
+    <script src="/static/js/main.js"></script>
+</head>
+
+<body>
+{% block body %}
+    {% if body is defined %}
+        {{ body | default('Funcionou!') }}
+    {% else %}
+        <p>Defina o block "body" ou a variável "body" no seu template.</p>
+    {% endif %}
+{% endblock %}
+
+<script> 
+</script>
+</body>
+</html>
